@@ -22,6 +22,8 @@ def greedy(tab, capacity=0):
             used_capacity += tab[0][0]
             new_tab.append(tab[0])
         tab.pop(0)
+    for i in range(0, len(new_tab)):
+        new_tab[i].pop(2)
     return new_tab
 
 
